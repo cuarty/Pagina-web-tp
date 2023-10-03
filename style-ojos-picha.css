@@ -1,0 +1,16 @@
+body{
+    background: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50)),
+    url(img/fondo-terror.JPG) no-repeat center center fixed;
+    background-size: cover; 
+    height: 100%;
+}
+
+.contenedor{
+    width: 80vw;
+    height: 80%;
+    margin: 10vh auto 10px auto;
+    border: 3px solid blue;
+    background-color: rgba(21, 31, 58, 0.70);
+    border-radius: 20px;
+
+}
