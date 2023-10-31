@@ -57,7 +57,7 @@
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4" id="fondo">
-                    <h3 style="text-align: center; color: aliceblue; margin-top: 20px;"> Trainee</h3>
+                    <h3 style="text-align: center; color: aliceblue; margin-top: 20px;"> Jubilados</h3>
                     <p style="text-align: center; color: aliceblue;">
                         Tiene un descuento <br><br>
                         <span style="font-weight: bold; font-size: 25px;">50%</span> <br><br>
@@ -65,7 +65,7 @@
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4" id="fondo">
-                    <h3 style="text-align: center; color: aliceblue; margin-top: 20px;"> Junior</h3>
+                    <h3 style="text-align: center; color: aliceblue; margin-top: 20px;"> Visitante</h3>
                     <p style="text-align: center; color: aliceblue;">
                         Tiene un descuento <br><br>
                         <span style="font-weight: bold; font-size: 25px;">15%</span> <br><br>
@@ -78,82 +78,66 @@
         <div style="margin-top: 50px;">
             <h4 style="color: aliceblue; text-align: center;"> VENTA </h4>
 
-            <h1 style="color: aliceblue; text-align: center;"> VALOR DEL TIKET $1500</h1>
+            <h1 style="color: aliceblue; text-align: center;"> VALOR DEL TIKET $2500</h1>
 
         </div>
 
         
-        <section>
-
+        <form action="" method="">
             <div class="row" style="margin-top: 10vh; margin-left: 20vw; margin-right: 20vw">                
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="text-align: center; margin-bottom: 30px;">
-                    <form action="" method="">
-                        <input style="width: 25vw;" name="nombre" type="text" placeholder="Nombre">
-                    </form>                    
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="text-align: center; margin-bottom: 30px;">                    
+                        <input style="width: 27vw; height: 40px; border-radius: 5px;" name="nombre" type="text" placeholder="Nombre">
                 </div>
+
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="text-align:center; margin-bottom: 30px">
-                    <form action="" method="">
-                        <input style="width: 25vw;" name="apellido" type="text" placeholder="Apellido">
-                    </form>
-                    
+                        <input style="width: 27vw; height: 40px; border-radius: 5px;" name="apellido" type="text" placeholder="Apellido">
                 </div>
             </div>
 
             <div class="row" style=" margin-left: 10vw; margin-right: 10vw; margin-bottom: 5vw;">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center;">
-                    <form action="" method="">
-                        <input style="width: 55vw" name="correo" type="email" placeholder="Correo">
-                    </form>                    
+                        <input style="width: 55vw; height: 40px; border-radius: 5px;" name="correo" type="email" placeholder="Correo">
+                    
                 </div>
             </div>
 
             <div class="row" style="margin-left: 20vw; margin-right: 20vw">                
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="text-align: center; margin-top: 20px;">
-                    <div class="row">
-                        <p style="margin-left: 50 vw; color: aliceblue">
-                            Cantidad
-                        </p> 
-                    </div>
-                    <div class="row">
-                        <form action="" method="">
-                            <input style="width: 25vw;" name="cantidad" type="text" placeholder="Cantidad">
-                        </form>
-                    </div>
-                                                                
+                <div class="col-md-6 mb-3">
+                    <label style="color: aliceblue;" for="cantidad" class="form-label">Cantidad</label>
+                    <input type="text" class="form-control" id="cantidad" placeholder="Cantidad">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="text-align:center; margin-top: 20px;">
-                    <div class="row">
-                        <p style="margin-left: 50 vw; color: aliceblue">
-                            Categoría
-                        </p> 
-                    </div>
-                    <div class="row">
-                        <form action="" method="">
-                            <input style="width: 25vw;" name="categoría" type="text" placeholder="Categoría">
-                        </form>
-                    </div>
+                <div class="col-md-6 mb-3">
+                    <label style="color: aliceblue;"  for="cantidad" class="form-label">Categoría</label>
+                    <select id="categoria" class="form-select">
+                        <option value="">Sin categoria</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="jubilado">Jubilado</option>
+                        <option value="visitante">Visitante</option>
+                    </select>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <div class="row" style="background-color: rgb(180, 200, 243); margin-top: 80px; margin-bottom: 50px; margin-left: 20vw; margin-right: 20vw">
+        
+            <div class="row" style="background-color: rgb(180, 200, 243);border-radius: 5px; margin-top: 40px; margin-bottom: 50px; margin-left: 20vw; margin-right: 20vw; height: 45px; align-items: center;">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <p>Total a Pagar: $</p>
+                    <p style="font-weight: bold; font-size: 20px; margin: auto 0;" id="resultado">Total a Pagar: $</p>
                 </div>
             </div>
-        </section>
+        
             
-        <section>
+        
             <div class="row" style="margin-top: 30px; margin-bottom: 100px; margin-left: 20vw; margin-right: 20vw">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="text-align: center; margin-top: 20px;">
                     <input style="width: 200px;" class="btn btn-primary" type="reset" value="Borrar">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="text-align: center; margin-top: 20px;">
-                    <button style="width: 200px;" class="btn btn-primary" type="submit">Resumen</button>
+                    <button style="width: 200px;" class="btn btn-primary" type=" button" id="resumen">Resumen</button>
                 </div>
             </div>
-        </section>
+        </form>
+
+            
+        
 
 
     </main>
@@ -184,6 +168,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
+    <script src="scripts.js"></script>
     
 </body>
 </html>
