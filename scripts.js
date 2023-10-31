@@ -27,7 +27,11 @@ function calcularPago() {
             total = total - (total * descVisitante);
             totalAPagar.textContent = `Total a Pagar: $ ${total}`
             break;
-    
+        
+        default:
+            total = total
+            totalAPagar.textContent = `Total a Pagar: $ ${total}`
+            break;
     }
 
     
